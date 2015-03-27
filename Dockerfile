@@ -1,10 +1,8 @@
 FROM resin/rpi-raspbian:latest
 
-RUN apt-get -q update && apt-get install -yq  dropbear --no-install-recommends && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get -q update && apt-get install -yq  dropbear --no-install-recommends
 
-RUN echo "root:rooty" | chpasswd
-
-RUN echo "$PASSWD"
+RUN echo "root:root" | chpasswd
 
 COPY . /app
 RUN chmod +x /app/init.sh
