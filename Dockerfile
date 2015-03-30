@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:latest
 
-RUN apt-get -q update && apt-get install -yq  dropbear net-tools hostapd udhcpd --no-install-recommends
+RUN apt-get -q update && apt-get install -yq  dropbear net-tools iptables hostapd udhcpd nano --no-install-recommends
 
 RUN echo "root:root" | chpasswd
 
