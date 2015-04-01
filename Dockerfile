@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:latest
+FROM resin/rpi-raspbian:wheezy
 
 RUN apt-get -q update && apt-get install -yq  dropbear net-tools iptables hostapd udhcpd nano rfkill iptables iproute dbus usbutils iw --no-install-recommends
 
