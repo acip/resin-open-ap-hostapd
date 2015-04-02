@@ -9,6 +9,8 @@ RUN chmod +x /app/init.sh
 
 RUN mv /etc/udhcpd.conf /etc/udhcpd.conf.bak && cp /app/udhcpd.conf /etc/udhcpd.conf
 
+RUN mv /etc/default/udhcpd /etc/default/udhcpd.bak && cp /app/udhcpd /etc/default/udhcpd
+
 RUN cp /app/hostapd.conf /etc/hostapd/hostapd.conf
 
 RUN touch /etc/wpa_supplicant/wpa_supplicant.conf
