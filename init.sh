@@ -12,4 +12,4 @@
 
 # service udhcpd start
 
-dropbear -E -F &
+dropbear -E -F
