@@ -11,7 +11,7 @@ ifconfig wlan0 up
 sleep 1
 
 service udhcpd start
-hostapd -B -d /etc/hostapd/hostapd.conf
+hostapd -d /etc/hostapd/hostapd.conf
 
 
 
