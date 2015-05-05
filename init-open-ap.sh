@@ -12,7 +12,3 @@ sleep 1
 
 service udhcpd start
 hostapd -d /etc/hostapd/hostapd.conf
-
-
-
-# dropbear -E -F
